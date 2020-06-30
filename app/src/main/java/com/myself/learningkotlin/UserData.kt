@@ -4,7 +4,11 @@ package com.myself.learningkotlin
  *created by Liang
  * on2020/6/30
  */
-class UserData : UserDataSuper(){
+class UserData(var age: Int) : UserDataSuper() {
+
+    init {
+       
+    }
 
     var name:String = "Mike"
         get() {
