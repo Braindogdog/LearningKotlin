@@ -11,7 +11,33 @@ fun main() {
 
 //    testCast()
 //    testgetset()
+    //测试方法的默认参数和具名参数
+//    test(age = 12,isBeatuful = false)
+    //测试类的构造函数的默认参数和具名参数
+    test()
+
 }
+
+fun test() {
+   val constructorTest = ConstructorTest("liangpeng",12,true)
+    constructorTest.say()
+}
+
+
+
+
+
+
+
+
+
+
+//
+//    fun test( name:String= "liangpeng", age:Int = 0, isBeatuful: Boolean= true) {
+//        println("name:"+name)
+//        println("age:"+age)
+//        println("isBea:"+isBeatuful)
+//    }
 
 fun testCast() {
     //    var user:IMainActiity? = UserData()
