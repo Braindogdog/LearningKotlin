@@ -3,10 +3,13 @@
 /local.properties
 /.idea/caches
 /.idea/libraries
+/.idea/codeStyles
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
+/.idea/runConfigurations.xml
 /.idea/assetWizardSettings.xml
+/.idea/.name
 *.idea
 .DS_Store
 /build

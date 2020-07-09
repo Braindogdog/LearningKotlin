@@ -8,4 +8,5 @@
 
 
 ### kotlintest    一个配合 AndroidJetpack的Kotlin项目
+1. DataBinding的使用
 
