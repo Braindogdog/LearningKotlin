@@ -4,7 +4,19 @@ package com.myself.learningkotlin
  *created by Liang
  * on2020/6/30
  */
-class UserData : UserDataSuper(){
+//class UserData(var height: Int) {     //编译器推荐的构造函数写法
+class UserData() {
+
+
+
+//    var height:Int
+//
+//    constructor(height:Int) {
+//        this.height = height
+//    }
+    init {
+
+    }
 
     var name:String = "Mike"
         get() {
@@ -18,9 +30,9 @@ class UserData : UserDataSuper(){
 //        println("-------eat")
 //    }
 
-    override fun run() {
-        println("------run")
-    }
+//    override fun run() {
+//        println("------run")
+//    }
 
     fun sleep() {
         println("------sleep")

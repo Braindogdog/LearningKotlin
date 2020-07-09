@@ -5,6 +5,7 @@ package com.myself.learningkotlin
  * on2020/6/30
  */
 abstract class UserDataSuper {
+
     abstract fun run()
     fun say() {
         println("------say")
