@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import com.liangpeng.kotlintest.R
+import com.liangpeng.kotlintest.basictest.IKotlinTestClass
 import com.liangpeng.kotlintest.databinding.FragmentLoginBinding
 
 
@@ -24,5 +25,15 @@ class LoginFragment:Fragment() {
 
 
         return view
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+         val iKotlinTestClass:IKotlinTestClass =   object : IKotlinTestClass {
+            override fun method1(name: String): String {
+                TODO("Not yet implemented")
+            }
+        }
+
     }
 }

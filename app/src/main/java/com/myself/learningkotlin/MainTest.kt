@@ -20,7 +20,7 @@ fun main() {
 
 fun test() {
    val constructorTest = ConstructorTest("liangpeng",12,true)
-    constructorTest.say()
+//    constructorTest.say()
 }
 
 
