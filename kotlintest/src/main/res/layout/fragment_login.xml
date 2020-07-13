@@ -3,7 +3,8 @@
 <layout>
 
     <data>
-        <variable name="user" type="com.liangpeng.kotlintest.bean.UserModel" />
+        <import type="com.liangpeng.kotlintest.bean.UserModel"/>
+        <variable name="user" type="UserModel" />
         <variable name="vehiche" type="com.liangpeng.kotlintest.bean.Vehichemodel"/>
 
 
@@ -22,7 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:background="@color/colorYellow"
-            android:text="@{user.name}"
+            android:text="@{user.age}"
             android:layout_margin="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"

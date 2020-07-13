@@ -7,7 +7,7 @@ import kotlin.collections.ArrayList
 
 
 fun main() {
-    var testClass = KotlinTestClass()
+    val testClass = KotlinTestClass()
 //    testClass.testArray()
 //    testClass.test1()
 //    testClass.mapTest()
@@ -19,10 +19,15 @@ fun main() {
 //    testClass.whenTest(19)
 //    testClass.testFor()
     testClass.testTryCatch()
+
 }
 
 const val TAG = "KotlinTestClass"
 class KotlinTestClass {
+
+
+
+
     var str: String? = null
     fun testnullsafe() {
        var length:Int? =  str?.length
