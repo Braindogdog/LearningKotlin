@@ -8,6 +8,7 @@
 - 高阶函数,Lambda表达式,匿名内部类
 - 主构造函数,次级构造函数,数组,集合及其操作符
 - kotlin中的表达式,枚举,for循环,when表达式,中缀表达式infix
+- 添加一个androidbasic的Module,用来测试android基础的一些面试题,顺手练练kotlin
 
 
 ### kotlintest    一个配合 AndroidJetpack的Kotlin项目
