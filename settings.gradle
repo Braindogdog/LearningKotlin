@@ -1,4 +1,5 @@
+
 include ':androidbasic'
-include ':app',
-        ':kotlintest'
+include ':app'
+//        ':kotlintest'
 rootProject.name = "LearningKotlin"

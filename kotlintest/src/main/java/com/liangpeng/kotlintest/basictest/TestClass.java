@@ -2,10 +2,14 @@ package com.liangpeng.kotlintest.basictest;
 
 import android.app.Activity;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class TestClass {
+import com.bumptech.glide.Glide;
+
+public class TestClass extends AppCompatActivity {
 
     protected void arrayTest() {
 
@@ -16,6 +20,9 @@ public class TestClass {
 
         }
 
+        Glide.with(this)
+                .load("")
+                .into(new ImageView(this));
         strs2[0] = "1";
 
     }
