@@ -7,4 +7,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextShowUser">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_green</item>
+
+    </style>
+
 </resources>

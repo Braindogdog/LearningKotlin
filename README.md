@@ -12,6 +12,13 @@
 - 添加一个androidbasic的Module,用来测试android基础的一些面试题,顺手练练kotlin
 
 
+2020.7.16
+使用kotlin写了一个简单的列表,用到的知识点
+1.RecyclerView的创建及Adapter展示数据
+2.data class 
+3.let, with关键字
+4.List集合的简单使用
+
 ### kotlintest    一个配合 AndroidJetpack的Kotlin项目
 1. DataBinding的使用
 
