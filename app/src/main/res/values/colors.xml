@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorPrimary">#FF1E8AE8</color>
+    <color name="colorPrimaryDark">#FF1E8AE8</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_titlebar">#FF1E8AE8</color>//标题栏颜色，app主色
+    <color name="color_background">#FFF2F2F2</color>//页面背景色
+    <color name="activity_line">#1E000000</color>//页面中线的颜色
+    <color name="activity_line_light">#09000000</color>//页面中浅色线的颜色
+
+    <color name="button_bg">#FF1E8AE8</color>//按钮显示主色
+    <color name="button_bg_select">#801E8AE8</color>//按钮点击后颜色
+    <color name="item_bg">#FFFFFFFF</color>//item背景色
+    <color name="item_bg_select">#FFD9D9D9</color>//item点击后背景色
+
+    <color name="item_bg_dark">#FFD9D9D9</color>//item背景色dark
+    <color name="item_bg_select_dark">#FFC4C4C4</color>//item点击后背景色dark
+
+    <color name="text_title">#FF000000</color>//标题文字
+    <color name="text_content">#DD000000</color>//普通文字
+    <color name="text_disable">#42000000</color>//禁用文字
+    <color name="text_tips">#89000000</color>浅色提示文字
+
+    <color name="text_important">#FF1E8AE8</color>//重要提示文字
+    <color name="text_important_select">#801E8AE8</color>//重要提示文字选中状态颜色
+
+    <!--<color name="color_red_assist">#FFFF0080</color>//app辅助显示颜色-->
+    <color name="color_red_assist">#DD4E41</color>//app辅助显示颜色
+    <color name="default_shadow_color">#88757575</color>//页面阴影颜色
+
+    <color name="edittext_color">#89FFFFFF</color>
+    <color name="edittext_hint_color">#89FFFFFF</color>
+    <color name="progressdialog_bg">#D9666666</color>
+    <color name="dialog_shadow">#7f000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="grey_light">#FFF0F0F0</color>
+    <color name="grey">#FFC4C4C4</color>
+    <color name="grey_trans">#60C4C4C4</color>
+    <color name="grey_deep">#FFCCCCCC</color>
+
+    <color name="color_command">#DD4E41</color>
+    <color name="color_tip_spot">#DD4E41</color>
+
+    <!--<color name="color_item_content">#FF333333</color>-->
+    <!--<color name="color_item_address">#FF555555</color>-->
+
+    <color name="color_green">#7FB446</color>
+
+    <color name="color_disagree">#DD4E41</color>
+    <color name="color_agree">#7FB446</color>
+
+    <color name="main_color">#1d7dff</color>
+    <color name="main_color_light">#5F1b6fb9</color>
+    <color name="second_color">#13C5B2</color>
+
+    <color name="item_text_title">#333333</color>
+    <color name="item_text_content_1">#7c7c7c</color>
+    <color name="item_text_content_2">#c2c2c2</color>
+
+    <color name="search_bar_bg_color">#b2efefef</color>
+    <color name="color_adapter_open">#297fef</color>
+
+
 </resources>
