@@ -21,10 +21,10 @@ class MyAdapter(private val context:Context,private val data:List<User>?) : Recy
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         with(data) {
-            holder.tvName.text = this?.get(position)?.getName()
-            holder.tvAge.text = this?.get(position)?.getAge().toString()
-            holder.tvJob.text = this?.get(position)?.getJob()
-            holder.tvSkin.text = this?.get(position)?.getSkin()
+            holder.tvName.text = this?.get(position)?.name
+            holder.tvAge.text = this?.get(position)?.age.toString()
+            holder.tvJob.text = this?.get(position)?.job
+            holder.tvSkin.text = this?.get(position)?.skin
         }
 
     }

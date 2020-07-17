@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         initData()
         initRecyclerView()
 
-        var user= data?.get(0)?.let { User(it.getName(),it.getAge(),it.getJob(),it.getSkin()) }
+//        var user= data?.get(0)?.let { User(it.getName(),it.getAge(),it.getJob(),it.getSkin()) }
 
 
 
