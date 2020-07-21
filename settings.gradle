@@ -1,4 +1,4 @@
-
+include ':lib'
 include ':androidbasic'
 include ':app'
 //        ':kotlintest'

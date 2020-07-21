@@ -14,8 +14,13 @@ fun main() {
     aa.push(1)
     aa.push(2)
    println( aa.pop())
-   println("2- ${aa.pop()}")
     aa.push(3)
+    aa.push(4)
+    aa.push(5)
+    aa.push(6)
+    aa.push(7)
+//   println("2- ${aa.pop()}")
+
    println("2- ${aa.pop()}")
 
 }
@@ -25,8 +30,8 @@ fun main() {
  * 按照2栈的顺序再取出,那么整体就是队列的先进先出
  */
 class CustomQuene<T> {
-    val stack1 = Stack<T>()
-    val stack2 = Stack<T>()
+    private val stack1 = Stack<T>()
+    private val stack2 = Stack<T>()
 
     fun push(arg:T) {
         stack1.push(arg)
