@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="route_line_color">#1E8AE8</color>
+    <color name="map_icon_title_color">#dddddd</color>
+    <color name="blue_marker_title_bg">#41677a</color>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Fire.BaseLibrary</string>
+    <string name="unit_top">968df696-b81e-79b9-a186-6a988546a740</string>
+<!--    <string name="settings_key_unit_id">unit_id</string>-->
+    <string name="settings_key_unit_tree">unit_tree</string>
+    <string name="settings_key_loaded">data_loaded</string>
+    <string name="settings_have_login">have_login</string>
+    <string name="settings_need_refresh">need_refresh</string>
+    <string name="settings_haveNewPhone">haveNewPhone</string>
+    <string name="settings_needShowRed">needShowRed</string>
+<!--    <string name="settings_user_id">user_id</string>-->
+    <string name="settings_login_id">user_login_id</string>
+    <string name="settings_password">user_password</string>
+    <string name="settings_user_header">user_header</string>
+<!--    <string name="settings_user_name">user_name</string>-->
+    <string name="settings_user_duty">user_duty</string>
+    <string name="settings_user_phone">user_phone</string>
+    <string name="settings_user_sex">user_sex</string>
+    <string name="settings_user_tele">user_tele</string>
+    <string name="settings_update_time">update_time</string>
+<!--    <string name="settings_unit_name">unit_name</string>-->
+    <string name="settings_virtual_unit_id">virtual_unit_id</string>
+    <string name="settings_virtual_unit_name">virtual_unit_name</string>
+    <string name="settings_key_data_version">data_version</string>
+    <string name="settings_key_data_version_remote">data_version_remote</string>
+    <string name="settings_key_function">user_function</string>
+    <string name="settings_lasttokentime">lasttokentime</string>
+    <string name="settings_dhtoken">dhtoken</string>
+</resources>

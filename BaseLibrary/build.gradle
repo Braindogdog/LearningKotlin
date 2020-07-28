@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.CompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.MinSdkVersion
+        targetSdkVersion rootProject.ext.TargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        //Arouter路由配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+greendao {
+    schemaVersion 4
+    daoPackage 'com.firebaselibrary.greendao'
+    targetGenDir 'src/main/java'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+        dirs project(':Common.map.baidu').file('libs')
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["creationBase"]
+    api project(':CommonCore')
+    api project(':Common.ImageLoder')
+    api project(':Common.SelectImage')
+    api project(':Common.NetworkRequest')
+    api project(':Common.Base')
+    api project(':Common.map.baidu')
+    api project(':Common.FloatWindow')
+    api 'org.greenrobot:greendao:3.2.2'
+    implementation rootProject.ext.dependencies["mapstruct"]
+    implementation rootProject.ext.dependencies["mapstruct-processor"]
+    annotationProcessor rootProject.ext.dependencies["mapstruct"]
+    annotationProcessor rootProject.ext.dependencies["mapstruct-processor"]
+
+}

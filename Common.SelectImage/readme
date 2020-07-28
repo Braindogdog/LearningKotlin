@@ -1,0 +1,6 @@
+本资源库用来选择图片
+调用SelectImageActivity的startActivityForResult(Activity context, SelectImageParameter parameter, int requestCode)方法即可
+SelectImageParameter是配置参数，它提供了三个构造器，默认无参的只能选择一张不剪切，还有两个分别是用来设置选择图片最大张数和剪裁参数
+
+在返回结果的intent中包含有选择图片的path(路径)和uri，SelectImageActivity中封装的有快捷的静态方法可直接取出
+分别是obtainResultPath(Intent data)，obtainResultUri(Intent data)

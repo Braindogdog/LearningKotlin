@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pano_image_upper"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/pano_image_background">
+
+        <ImageView
+            android:id="@+id/panoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="57.0dip"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/panoImageView"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="0.0dip">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="街景图"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pano_image_background_tip" />
+</LinearLayout>

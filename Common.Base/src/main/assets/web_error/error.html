@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8"/>
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <style type="text/css">
+	    	  body{ margin: 0; padding: 0;}
+	    	  .c { display: table; width: 100%;}
+	    	  .c .table { display: table; width: 100%; font-family: "微软雅黑";}
+	    	  .c .cell{ display: table-cell;  padding: 0px 10px; text-align: center; vertical-align: middle; font-size:24px; color:#d6d6d9;}
+
+	    </style>
+	    <script type="text/javascript">
+	    		function f404(){
+	    				//console.log(location.href);
+	    				//console.log("----");
+	    				if(window.winner){
+	    					window.winner.tryLoad();
+	    				}
+
+	    		}
+	    </script>
+	</head>
+	<body>
+
+
+			<div class="c" onclick="f404()">
+			<!--<div class="c" >-->
+				<div class="table" style="padding-top:30px;">
+					<div class="cell">
+						<img   src="error.png"/>
+					</div>
+				</div>
+				<div class="table" style="padding-top:10px;">
+					<div class="cell">
+						抱歉,加载失败!
+					</div>
+				</div>
+
+			</div>
+
+
+	</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.CompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.MinSdkVersion
+        targetSdkVersion rootProject.ext.TargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets{
+        main{
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    
+}
+
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.v7"
+    //这三个依赖不要删除
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.v7"
+    implementation(name: 'NaviTts', ext: 'aar')
+    implementation(name: 'onsdk_all', ext: 'aar')
+    implementation 'org.greenrobot:eventbus:3.1.1'
+}

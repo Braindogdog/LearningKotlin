@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/share"
+            android:textColor="@color/text_tips"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/target1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_wx"
+                android:gravity="center"
+                android:text="@string/wxhy"
+                android:textColor="@drawable/textcolor_pickerview_cancel_btn"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/target2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_pyq"
+                android:gravity="center"
+                android:text="@string/pyq"
+                android:textColor="@drawable/textcolor_pickerview_cancel_btn"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/target3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_qq"
+                android:gravity="center"
+                android:text="@string/qq"
+                android:textColor="@drawable/textcolor_pickerview_cancel_btn"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/target4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_wb"
+                android:gravity="center"
+                android:text="@string/weibo"
+                android:textColor="@drawable/textcolor_pickerview_cancel_btn"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/activity_line" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/dialog_left_button_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@drawable/textcolor_pickerview_cancel_btn"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

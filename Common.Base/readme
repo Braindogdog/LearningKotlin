@@ -1,0 +1,37 @@
+主要包含三部分内容
+1、封装的RecyclerView
+2、工具类
+3、通用的样式，基类等
+
+1： IRecyclerView可以直接在布局中引用，提供了BaseAdapter，使用的时候继承BaseAdapter调用setIAdapter
+    BaseRefeshAndLoadMoreActivity，BaseRefeshAndLoadMoreFragment是封装好的基于IRecyclerView可以快捷进行
+    数据分页加载的页面
+
+
+2：  ServerLocator，IOC注入工具类
+
+
+
+3： BaseActivity是通用的Activity基类
+    BaseFragment是fragment基类
+    NumberProgressBar是带有数字的进度条
+    WheelView是滚轮view
+    CircularRing是可以转圈的圆环
+    CommomDialog是下面有两个按钮的标准弹窗
+    CommomEdittextDialog是可以输入内容，下面有两个按钮的弹窗
+    CommomProgerssNumberDialog可以显示进度的弹窗
+    CommonCityChoosePopWindow选择城市的弹窗
+    CommonDatePickerPopupWindow日期选择弹窗
+    CommonDoublePickerPopupWindow可以自定义的双选弹窗
+    CommonPickerPopupWindow可以总定义的双选弹窗
+    CommonProgressDialog正在加载的弹窗
+    CommonProgressWithSuccessDialog最后可以设置成功或失败动画的加载弹窗
+    CommonSelectPopupWindow仿IOS底部弹出的选择弹窗
+    CommonSharePopupWindow分享弹窗
+    CommonSingleButtonDialog底部只有一个按钮的弹窗
+    CommonTitleBar通用的标题栏
+    CommonWebViewActivity通用的加载网页的activity
+    NoScrollViewPager选择item没有切换动画
+    RatioImageView可以自定义显示比例的imageview
+    RatioRelativeLayout可以自定义显示比例的RelativeLayout
+    ShadowLayout阴影背景的layout

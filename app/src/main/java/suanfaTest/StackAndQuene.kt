@@ -48,6 +48,7 @@ class CustomQuene<T> {
         //将2栈的数据导出
         return stack2.pop()
 
+
     }
 
 }

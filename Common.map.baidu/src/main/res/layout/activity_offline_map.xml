@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="common.baidunavigationlibrary.offlinemap.view.OfflineMapActivity">
+
+    <include layout="@layout/layout_common_titlebar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/color_titlebar"
+        app:tabMinWidth="72dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/color_titlebar"
+        app:tabTextColor="@color/text_tips" />
+
+    <common.baselibrary.baseview.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

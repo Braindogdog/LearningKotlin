@@ -1,0 +1,8 @@
+<resources>
+
+     <!--图层点宽高-->
+    <dimen name="main_layer_icon_width">30dp</dimen>
+    <dimen name="main_layer_icon_height">32dp</dimen>
+
+
+</resources>

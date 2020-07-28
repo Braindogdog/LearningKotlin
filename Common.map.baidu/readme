@@ -1,0 +1,18 @@
+百度导航库：
+在AndroidManifest.xml中添加
+        <!-- 百度导航API-KEY -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${BAIDU_AK}" />
+        <!-- 百度语音识别KEY -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="${baidu_yuyin_id}" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="${baidu_yuyin_key}" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="${baidu_yuyin_secret_key}" />
+分别是百度的AK和百度语音的key
+调用时调用NavigationActivity的startNavigation静态方法传入起点和终点信息

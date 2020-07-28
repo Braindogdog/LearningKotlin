@@ -1,0 +1,31 @@
+ImageLoaderLibrary使用说明
+
+ImageLoader为对外暴露的类，所有的操作都通过它实现
+它提供了四个初始化init()方法，需要在Application中的onCreate方法中调用
+clearAllMemoryCaches，clearMomoryCache，clearDiskCache，clearMomory提供了相应的几种清除缓存的方式
+saveImageIntoGallery实现了对图片的保存
+
+具体加载图片时使用方法和glide类似，基本的操作为
+ImageLoader.with(context)
+         .url(url)
+         .into(imageView);
+第一个调用的为with方法用来初始化，into方法最后一个调用用来提交配置信息显示图片，中间可以通过多个方法设置一些加载参数
+
+        url(String url)
+        thumbnail(float thumbnail)//缩略图
+        file()
+        assets()
+        content()//加载ContentProvider资源
+        rectRoundCorner(int rectRoundRadius, int overlayColorWhenGif) //形状为圆角矩形时的圆角半径
+        shape(int shapeMode,int rectRoundRadius) //形状
+        placeHolder(int placeHolderResId) //占位图
+        override(int oWidth, int oHeight) //加载图片时设置分辨率
+        scale(int scaleMode)
+        animate(int animationId )
+        animate( Animation animation)
+        animate(ViewPropertyAnimation.Animator animato)
+        asBitmap(BitmapListener bitmapListener)// 使用bitmap不显示到imageview
+        into(View targetView) //展示到imageview
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/item_bg_select">
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <color android:color="@color/grey_trans" />
+            </item>
+            <item android:state_enabled="false">
+                <color android:color="@color/grey_trans" />
+            </item>
+            <item>
+                <color android:color="@android:color/transparent" />
+            </item>
+        </selector>
+    </item>
+</ripple>

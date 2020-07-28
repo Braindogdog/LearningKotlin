@@ -1,0 +1,32 @@
+基于retrofit封装的网络请求库
+实现了get，post，文件上传，文件下载基本方法
+HttpBuilder是配置文件，在application中配置：
+HttpBuilder.init(context)
+                .build();
+这只是最基本的配置，它还提供了几个方法可以进行一些初始化配置
+
+HttpUtil是网络请求时使用的库
+                new HttpUtil("url", context)
+                        .success(new Success() {
+                            @Override
+                            public void Success(String result) {
+
+                            }
+                        })
+                        .error(new Error() {
+                            @Override
+                            public void Error(Object... values) {
+
+                            }
+                        })
+                        .progress(new Progress() {
+                            @Override
+                            public void progress(float p, String name) {
+
+                            }
+                        })
+                        .uploadFile(listfile);
+它同样是链式调用，提供了一些方法来进行请求参数的配置，最终的构建方法如下：
+分别是get，post，download，uploadFile，分别用于get，post请求和文件下载以及上传
+如果需要断点续传调用downloadWithPause方法，pauseDownLoadByUrl用来暂停下载继续下载再调用一遍downloadWithPause方法即可，
+不需要再进行其他额外的判断，库里已经记录自己断点位置

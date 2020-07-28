@@ -1,0 +1,6 @@
+<resources>
+
+    <!--路径规划-->
+    <string name="route_plan_result_err_1">抱歉,路线规划失败，请重新选择起终点后重试</string>
+    <string name="route_plan_result_err_2">路线规划失败</string>
+</resources>

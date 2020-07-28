@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="52dp"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+<!--    android:background="@color/grey"-->
+<!--    android:layout_margin="2dp"-->
+
+    <common.baselibrary.baseview.RatioImageView
+        android:id="@+id/riv_image"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:scaleType="centerCrop" />
+
+    <common.baselibrary.baseview.RatioRelativeLayout
+        android:id="@+id/rv_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+<!--        android:background="@drawable/common_recyclerview_item_bg_dark"-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/icon_tu" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/iv_camera"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="选择图片"-->
+<!--                android:textColor="@color/text_tips"-->
+<!--                android:textSize="14sp" />-->
+        </LinearLayout>
+
+    </common.baselibrary.baseview.RatioRelativeLayout>
+
+</RelativeLayout>
